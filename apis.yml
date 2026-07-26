@@ -1,7 +1,24 @@
 aid: enjoyhq
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/enjoyhq.png
 name: EnjoyHQ
-description: EnjoyHQ is a company surfaced as a portfolio company of point-nine and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: EnjoyHQ was a centralized user-research and customer-feedback repository — a single
+  source of truth where product and UX teams stored, tagged, searched, and analyzed qualitative and
+  quantitative research (interviews, surveys, support tickets, NPS scores, and app-store reviews).
+  Backed by Point Nine Capital, it was acquired by UserTesting in 2021 and folded into the UserTesting
+  Human Insight Platform. Its brand domain getenjoyhq.com now issues a permanent (HTTP 308) redirect to
+  usertesting.com/platform/enjoyhq, and EnjoyHQ no longer operates an independent developer,
+  documentation, or API surface.
 url: https://raw.githubusercontent.com/api-evangelist/enjoyhq/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +26,22 @@ x-backed-by:
 - point-nine
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: usertesting
+x-note: getenjoyhq.com 308-redirects all paths to usertesting.com/platform/enjoyhq; no independent
+  developer, API, docs, well-known, or security surface remains as of 2026-07-19.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- User Research
+- Customer Feedback
+- Insights Management
+- Research Repository
+- User Experience
+- Product Management
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/enjoyhq-domain-security.yml
 - type: Website
   url: https://getenjoyhq.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
